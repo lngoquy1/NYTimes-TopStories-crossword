@@ -1,0 +1,197 @@
+<table className='puzzle'>
+<tr className='row0'>
+<td className='cell cell0'><input type='text' ref='answer0000'' placeholder='1' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell1'><input type='text' ref='answer0001'' placeholder='2' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell2'><input type='text' ref='answer0002' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell3'><input type='text' ref='answer0003' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell4'><input type='text' ref='answer0004' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell5'><input type='text' ref='answer0005' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell6'><input type='text' ref='answer0006'' placeholder='3' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell7'><input type='text' ref='answer0007' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row1'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'><input type='text' ref='answer0101' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'' style={tdStyles}></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'><input type='text' ref='answer0106' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell7'' style={tdStyles}></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row2'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'><input type='text' ref='answer0201' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'' style={tdStyles}></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'><input type='text' ref='answer0206'' placeholder='6' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell7'><input type='text' ref='answer0207' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell8'><input type='text' ref='answer0208' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell9'><input type='text' ref='answer0209' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell10'><input type='text' ref='answer0210' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row3'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'><input type='text' ref='answer0301' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'><input type='text' ref='answer0303'' placeholder='4' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'><input type='text' ref='answer0306' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell7'' style={tdStyles}></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row4'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'><input type='text' ref='answer0401' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'><input type='text' ref='answer0403' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'><input type='text' ref='answer0406' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell7'' style={tdStyles}></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row5'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'' style={tdStyles}></td>
+<td className='cell cell2'><input type='text' ref='answer0502'' placeholder='5' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell3'><input type='text' ref='answer0503' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell4'><input type='text' ref='answer0504' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell5'><input type='text' ref='answer0505' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell6'><input type='text' ref='answer0506' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell7'><input type='text' ref='answer0507' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell8'><input type='text' ref='answer0508' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row6'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'' style={tdStyles}></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'><input type='text' ref='answer0603' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'><input type='text' ref='answer0606' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell7'' style={tdStyles}></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row7'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'' style={tdStyles}></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'><input type='text' ref='answer0703' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'><input type='text' ref='answer0706'' placeholder='8' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell7'><input type='text' ref='answer0707'' placeholder='9' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell8'><input type='text' ref='answer0708' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell9'><input type='text' ref='answer0709' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell10'><input type='text' ref='answer0710' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row8'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'' style={tdStyles}></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'' style={tdStyles}></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'' style={tdStyles}></td>
+<td className='cell cell7'><input type='text' ref='answer0807' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row9'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'><input type='text' ref='answer0901'' placeholder='7' maxLength='1' onChange={this.handleChange} /></td>
+<td className='cell cell2'><input type='text' ref='answer0902' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell3'><input type='text' ref='answer0903' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell4'><input type='text' ref='answer0904' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell5'><input type='text' ref='answer0905' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell6'><input type='text' ref='answer0906' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell7'><input type='text' ref='answer0907' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell8'><input type='text' ref='answer0908' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row10'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'' style={tdStyles}></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'' style={tdStyles}></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'' style={tdStyles}></td>
+<td className='cell cell7'><input type='text' ref='answer1007' maxlength='1' onChange={this.handleChange}/></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row11'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'' style={tdStyles}></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'' style={tdStyles}></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'' style={tdStyles}></td>
+<td className='cell cell7'' style={tdStyles}></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+<tr className='row12'>
+<td className='cell cell0'' style={tdStyles}></td>
+<td className='cell cell1'' style={tdStyles}></td>
+<td className='cell cell2'' style={tdStyles}></td>
+<td className='cell cell3'' style={tdStyles}></td>
+<td className='cell cell4'' style={tdStyles}></td>
+<td className='cell cell5'' style={tdStyles}></td>
+<td className='cell cell6'' style={tdStyles}></td>
+<td className='cell cell7'' style={tdStyles}></td>
+<td className='cell cell8'' style={tdStyles}></td>
+<td className='cell cell9'' style={tdStyles}></td>
+<td className='cell cell10'' style={tdStyles}></td>
+<td className='cell cell11'' style={tdStyles}></td>
+<td className='cell cell12'' style={tdStyles}></td>
+</tr>
+</table>

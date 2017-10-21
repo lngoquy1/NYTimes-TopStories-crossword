@@ -7,7 +7,7 @@ import glob, os
 
 
 import urllib,json
-from crossword import getWordList
+from crossword import getWordList, getJson, generateHTML
 from puzzlemaker import Crossword, Word
 
 def main(): 
@@ -32,19 +32,24 @@ def main():
            ques = question_gen(allAbstract[i])
 	   if ques != None:
 	       allQuestions.append(ques)
-
+	size = 13
     	wordList = getWordList(allQuestions,10)
-
-    	crossWord = Crossword(13, 13, "-", 5000, wordList)
+	getJson(wordList)
+    	crossWord = Crossword(size, size, "-", 5000, wordList)
+	
     	crossWord.compute_crossword(2)
-    	print crossWord.word_bank()
+    	# print crossWord.word_bank()
     	print crossWord.solution()
-    	print crossWord.word_find()
-    	print crossWord.display()
-	print type(crossWord.display())
+    	# print crossWord.word_find()
+    	# print crossWord.grid
+
+	gameGrid = crossWord.display()
+
+	generateHTML(size, gameGrid)
+
     	print crossWord.legend()
     	print len(crossWord.current_word_list), "out of", len(wordList)
-    	print crossWord.debug
+    	# print crossWord.debug
 
      
 def question_gen(sentence):

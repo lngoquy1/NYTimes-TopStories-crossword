@@ -18,16 +18,16 @@ class Crossword(object):
         self.current_word_list = []
         self.debug = 0
         self.clear_grid()
- 
-    def clear_grid(self): # initialize grid and fill with empty character
+    # initialize grid and fill with empty character
+    def clear_grid(self): 
         self.grid = []
         for i in range(self.rows):
             ea_row = []
             for j in range(self.cols):
                 ea_row.append(self.empty)
             self.grid.append(ea_row)
- 
-    def randomize_word_list(self): # also resets words and sorts by length
+    # Putting wordlist into Word objects, append to list and sorts by length ascendingly 
+    def randomize_word_list(self): 
         temp_list = []
         for word in self.available_words:
             if isinstance(word, Word):
@@ -37,11 +37,13 @@ class Crossword(object):
         random.shuffle(temp_list) # randomize word list
         temp_list.sort(key=lambda i: len(i.word), reverse=True) # sort by length
         self.available_words = temp_list
- 
+    
+    # Compute the crossword, adjust time_permitted and spins for level of contraction of crossword
     def compute_crossword(self, time_permitted = 1.00, spins=2):
         time_permitted = float(time_permitted)
  
         count = 0
+        # Make an exact copy of the current Crossword object
         copy = Crossword(self.cols, self.rows, self.empty, self.maxloops, self.available_words)
  
         start_full = float(time.time())
@@ -56,8 +58,7 @@ class Crossword(object):
                     if word not in copy.current_word_list:
                         copy.fit_and_add(word)
                 x += 1
-            #print copy.solution()
-            #print len(copy.current_word_list), len(self.current_word_list), self.debug
+          
             # buffer the best crossword by comparing placed words
             if len(copy.current_word_list) > len(self.current_word_list):
                 self.current_word_list = copy.current_word_list
@@ -94,8 +95,9 @@ class Crossword(object):
         new_coordlist = self.sort_coordlist(coordlist, word)
         #print new_coordlist
         return new_coordlist
- 
-    def sort_coordlist(self, coordlist, word): # give each coordinate a score, then sort
+    
+    # give each coordinate a score, then sort
+    def sort_coordlist(self, coordlist, word): 
         new_coordlist = []
         for coord in coordlist:
             col, row, vertical = coord[0], coord[1], coord[2]
@@ -105,8 +107,9 @@ class Crossword(object):
         random.shuffle(new_coordlist) # randomize coord list; why not?
         new_coordlist.sort(key=lambda i: i[4], reverse=True) # put the best scores first
         return new_coordlist
- 
-    def fit_and_add(self, word): # doesn't really check fit except for the first word; otherwise just adds if score is good
+    
+    # doesn't really check fit except for the first word; otherwise just adds if score is good
+    def fit_and_add(self, word): 
         fit = False
         count = 0
         coordlist = self.suggest_coord(word)
@@ -143,13 +146,9 @@ class Crossword(object):
  
             count += 1
         return
- 
+    # Return 0 if found no fit, 1 for fit, and 2+ emans a cross.
     def check_fit_score(self, col, row, vertical, word):
-        '''
-        And return score (0 signifies no fit). 1 means a fit, 2+ means a cross.
- 
-        The more crosses the better.
-        '''
+        
         if col < 1 or row < 1:
             return 0
  
@@ -283,13 +282,18 @@ class Crossword(object):
             copy.set_cell(word.col, word.row, word.number)
  
         for r in range(copy.rows):
-            for c in copy.grid[r]:
-                outStr += '%s ' % c
-            outStr += '\n'
+            for c in range(copy.cols):
+                if str(copy.grid[r][c]).isalpha():
+                    copy.grid[r][c] = " "
+        #         outStr += '%s ' % c
+        #     outStr += '\n'
  
-        outStr = re.sub(r'[a-z]', ' ', outStr)
-        return outStr
- 
+        # outStr = re.sub(r'[a-z]', ' ', outStr)
+
+        # return outStr
+        return copy.grid
+
+
     def word_bank(self): 
         outStr = ''
         temp_list = duplicate(self.current_word_list)

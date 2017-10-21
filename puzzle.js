@@ -631,6 +631,59 @@
 		}
 	});
 	
-	var data = JSON.parse("data.txt");
+	var data = [
+		{
+			answer: 'Pascaline',
+			clue: "1. The mechanical calculator primarily intended as an adding machine.",
+			imageUrl: 'images/250px-Blaise_Pascal_Versailles.JPG'
+		},
+		{
+			answer: 'Difference engine',
+			clue: "2. An automatic mechanical calculator designed to tabulate polynomial functions.",
+			imageUrl: 'images/220px-Charles_Babbage_-_1860.jpg'
+		},
+		{
+			answer: "MooresLaw",
+			clue: "3. Processor complexity will double every two years.",
+			imageUrl: 'images/Gordon_Moore.jpg'
+		},
+		{
+			answer: 'FuzzyLogic',
+			clue: "4. A form of many-valued logic in which the truth values of variables may be any real number between 0 and 1.",
+			imageUrl: 'images/Zadeh-barcelona-1997@92x115.gif'
+		},
+		
+		{
+			answer: 'Algorithm',
+			clue: "5. The first published description of programming.",
+			imageUrl: 'images/220px-Ada_Lovelace_portrait.jpg'
+		},
+		{
+			answer: 'TuringTest',
+			clue: "6. A test of a machine's ability to exhibit intelligent behaviour equivalent to, or indistinguishable from, that of a human.",
+			imageUrl: 'images/Alan_Turing_Aged_16.jpg'
+		},
+		{
+			answer: 'Boolean',
+			clue: "7. A branch of algebra in which the values of the variables are the truth values true and false.",
+			imageUrl: 'images/220px-George_Boole_color.jpg'
+		},
+		{
+			answer: 'Vacuum tube',
+			clue: "8. A device used in electronics that controls electric current between electrodes in an evacuated container.",
+			imageUrl: 'images/220px-John_Ambrose_Fleming_1890.png'
+		},
+		{
+			answer: 'Abacus',
+			clue: "9. The first known calculator.",
+			imageUrl: 'images/220px-Boulier1.JPG'
+		},
+		{
+			answer: 'Relational',
+			clue: "10. A digital database whose organization is based on the relational model.",
+			imageUrl: 'images/Edgar_F_Codd.jpg'
+		}
+	];
+	
 	ReactDOM.render(<Game data={data} />, document.getElementById('game'));
 })();
